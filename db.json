@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "text": "шахматы #chess"
+    },
+    {
+      "id": 2,
+      "text": "Шахматы"
+    },
+    {
+      "id": 3,
+      "text": "шахматы #chess"
+    },
+    {
+      "id": 5,
+      "text": "hdfvjah #dhwuh"
+    },
+    {
+      "id": 7,
+      "text": "шахматы"
+    },
+    {
+      "id": 8,
+      "text": "chess"
+    },
+    {
+      "id": 9,
+      "text": "dfhagfjk #skjdhfkjs"
+    },
+    {
+      "id": 10,
+      "text": "sdjhgfjwgf #sjkehkjw"
+    },
+    {
+      "id": 11,
+      "text": "siblings"
+    },
+    {
+      "id": 12,
+      "text": "jhfgajhsfg #jkser"
+    },
+    {
+      "id": 13,
+      "text": "hdgjdhwg #ahjgrwkjh"
+    },
+    {
+      "id": 14,
+      "text": "jhgjge #jkfrhwk"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

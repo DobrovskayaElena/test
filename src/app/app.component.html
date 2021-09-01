@@ -1,0 +1,57 @@
+<div class="main-content">
+  <form [formGroup]="formValue" class="form-group">
+    <div class="input-text">
+      <input
+        type="text"
+        class="form-control"
+        id="text"
+        formControlName="text"
+        (change)="searchTag($event)"
+        (input)="searchMathes($event)"
+      />
+      <button class="button-add" (click)="postNoteData()">Add</button>
+    </div>
+  </form>
+  <div class="tags-content">
+    <div *ngFor="let tag of hashTagsArray">
+      <span class="tag" (click)="applyFilter($event)">{{ tag }}</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <div *ngFor="let note of notesList">
+      <p class="list" [innerHTML]="note.text | highlight: searchTerm"></p>
+      <button
+        class="button-edit"
+        (click)="openModal()"
+        (click)="editNoteData(note)"
+      >
+        Edit
+      </button>
+      <button class="button-delete" (click)="deleteNoteData(note.id)">
+        Delete
+      </button>
+    </div>
+  </div>
+  <div class="modal-close" id="modal">
+    <div class="modal-content">
+      <form [formGroup]="formValue" class="form-group">
+        <div>
+          <input
+            type="text"
+            class="form-control"
+            id="text"
+            formControlName="text"
+          />
+        </div>
+        <div class="buttons">
+          <button (click)="updateNoteData()" (click)="closeModal()">
+            Submit
+          </button>
+          <button class="button" id="cancel" (click)="cancelAdd()">
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
