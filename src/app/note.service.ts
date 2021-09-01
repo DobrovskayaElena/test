@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class NoteService {
-  url = 'http://localhost:3000/posts';
+  url = 'https://my-json-server.typicode.com/DobrovskayaElena/test/posts';
 
   constructor(private http: HttpClient) {}
 
